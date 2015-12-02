@@ -1,0 +1,32 @@
+html.perspector-plugin-document {
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+.perspector-plugin-root {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.perspector-plugin-root.play {
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
+  -webkit-transform-origin: right center 0;
+          transform-origin: right center 0;
+  -webkit-transform: scale(0.9) rotate3d(1,-10,0,60deg);
+          transform: scale(0.9) rotate3d(1,-10,0,60deg);
+}
+.perspector-plugin-root, .perspector-plugin-root * {
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+  overflow: visible;
+}
+.perspector-plugin-root .perspector-plugin-focus {
+  -webkit-transform: translate3d(-10px,-10px,0);
+          transform: translate3d(-10px,-10px,0);
+  overflow: visible;
+  z-index: 10000;
+}
