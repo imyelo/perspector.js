@@ -12,6 +12,7 @@ gulp.task('compile', function () {
       .pipe(css2js()),
     gulp.src('./src/index.js'))
     .pipe(concat('perspector.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('./dist'));
 });
 
