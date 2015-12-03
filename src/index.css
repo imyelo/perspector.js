@@ -14,10 +14,10 @@ html.perspector-plugin-document {
 }
 .perspector-plugin-root.play {
   box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
-  -webkit-transform-origin: right center 0;
-          transform-origin: right center 0;
-  -webkit-transform: scale(0.9) rotate3d(1,-10,0,60deg);
-          transform: scale(0.9) rotate3d(1,-10,0,60deg);
+  -webkit-transform-origin: 80% 20% 0;
+          transform-origin: 80% 20% 0;
+  -webkit-transform: scale(0.8) rotate3d(1,-1,0,30deg) translate3d(-30%,0,0);
+          transform: scale(0.8) rotate3d(1,-1,0,30deg) translate3d(-30%,0,0);
 }
 .perspector-plugin-root, .perspector-plugin-root * {
   -webkit-transition: all 400ms ease;
@@ -29,4 +29,5 @@ html.perspector-plugin-document {
           transform: translate3d(-10px,-10px,0);
   overflow: visible;
   z-index: 10000;
+  background-color: rgba(232, 12, 129, 0.05);
 }
